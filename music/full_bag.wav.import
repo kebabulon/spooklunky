@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/full_bag.wav-eaa3de4a35eff7168a39485d9043558f.sample"
+
+[deps]
+
+source_file="res://music/full_bag.wav"
+dest_files=[ "res://.import/full_bag.wav-eaa3de4a35eff7168a39485d9043558f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

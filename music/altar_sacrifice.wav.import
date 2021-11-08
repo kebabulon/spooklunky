@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/altar_sacrifice.wav-ed77c13fbda591f48da41096cf24ed28.sample"
+
+[deps]
+
+source_file="res://music/altar_sacrifice.wav"
+dest_files=[ "res://.import/altar_sacrifice.wav-ed77c13fbda591f48da41096cf24ed28.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

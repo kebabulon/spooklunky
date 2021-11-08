@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Levels/tileset1.tres" type="TileSet" id=1]
+[ext_resource path="res://Actors/Item.tscn" type="PackedScene" id=2]
+
+[node name="corridor_1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 2, 0, 4, 4, 0, 5, 4, 0, 6, 4, 0, 7, 2, 0, 8, 1, 0, 9, 1, 0, 65536, 0, 0, 65537, 2, 0, 65538, 2, 0, 65539, 2, 0, 65543, 2, 0, 65544, 2, 0, 65545, 1, 0, 131072, 2, 0, 131073, 2, 0, 131074, 2, 0, 131080, 2, 0, 131081, 2, 0, 196608, 2, 0, 196609, 2, 0, 196617, 2, 0, 262149, 2, 0, 327684, 2, 0, 327685, 2, 0, 327686, 0, 0, 393216, 1, 0, 393217, 1, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 0, 0, 393223, 0, 0, 393224, 2, 0, 393225, 2, 0, 458752, 2, 0, 458753, 2, 0, 458754, 2, 0, 458755, 2, 0, 458756, 2, 0, 458757, 2, 0, 458758, 2, 0, 458759, 0, 0, 458760, 0, 0, 458761, 2, 0, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 524292, 2, 0, 524293, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524297, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0 )
+
+[node name="objects" type="Node2D" parent="."]
+
+[node name="Item" parent="objects" instance=ExtResource( 2 )]
+position = Vector2( 80.6349, 177.019 )
+
+[node name="Item2" parent="objects" instance=ExtResource( 2 )]
+position = Vector2( 175.129, 109.613 )
+
+[node name="Item3" parent="objects" instance=ExtResource( 2 )]
+position = Vector2( 264.583, 170.719 )

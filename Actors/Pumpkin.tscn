@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/pumpkin.png" type="Texture" id=1]
+[ext_resource path="res://Actors/Pumpkin.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 11.5302, 6.98938 )
+
+[node name="Pumpkin" type="KinematicBody2D" groups=[
+"pumpkin",
+]]
+collision_layer = 4
+collision_mask = 5
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.420448, -7.46296 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -16.1873 )
+texture = ExtResource( 1 )

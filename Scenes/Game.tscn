@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Systems/Level.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/bg.png" type="Texture" id=3]
+[ext_resource path="res://Systems/PauseManager.tscn" type="PackedScene" id=4]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -22.584, -188.361 )
+
+[node name="Level" parent="." instance=ExtResource( 2 )]
+
+[node name="parallax" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="parallax"]
+motion_scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite" type="Sprite" parent="parallax/ParallaxLayer"]
+modulate = Color( 0.482353, 0.482353, 0.482353, 1 )
+position = Vector2( 634.32, 641.447 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1500, 1500 )
+
+[node name="PauseManager" parent="." instance=ExtResource( 4 )]
+
+[connection signal="drop_bomb" from="Player" to="Level" method="_on_Player_drop_bomb"]
+[connection signal="changePlayersPosition" from="Level" to="Player" method="_on_Level_changePlayersPosition"]
+[connection signal="resetPlayer" from="Level" to="Player" method="_on_Level_resetPlayer"]
